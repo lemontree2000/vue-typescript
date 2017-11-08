@@ -5,8 +5,8 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import Component from 'vue-class-component'
+import Vue from 'vue';
+import Component from 'vue-class-component';
 
 @Component
 export default class HelloWorld extends Vue {
@@ -15,11 +15,11 @@ export default class HelloWorld extends Vue {
   }
 
   get computedMsg () {
-    return 'computed' + this.msg
+    return 'computed' + this.msg;
   }
   greet () {
-    this.msg += 'world'
-    console.log(this.computedMsg)
+    this.msg += 'world';
+    console.log(this.computedMsg);
   }
 }
 </script>
