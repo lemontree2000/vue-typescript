@@ -5,7 +5,7 @@ import App from './App.vue'
 import router from './router/index'
 import 'amfe-flexible';
 
-import './common/less/rest.less'
+import './common/less/index.less'
 
 Vue.config.productionTip = false
 

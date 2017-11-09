@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
+import Index from '@/components/index/index.vue'
+import Topic from '@/components/topic/topic.vue'
+import ShoppingCart from '@/components/shopping-cart/shopping-cart.vue'
+import ItemClass from '@/components/item-class/item-class.vue'
+import Me from '@/components/me/me.vue'
 
 Vue.use(Router)
 
@@ -8,8 +12,32 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: HelloWorld
+      redirect: '/index'
+    },
+    {
+      path: '/index',
+      name: 'index',
+      component: Index
+    },
+    {
+      path: '/topic',
+      name: 'tipic',
+      component: Topic
+    },
+    {
+      path: '/me',
+      name: 'me',
+      component: Me
+    },
+    {
+      path: '/class',
+      name: 'class',
+      component: ItemClass
+    },
+    {
+      path: '/cart',
+      name: 'cart',
+      component: ShoppingCart
     }
   ]
 })

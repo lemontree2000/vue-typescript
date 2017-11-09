@@ -1,6 +1,6 @@
 <template>
-  <div class="login">
-
+  <div class="topic">
+    topic
   </div>
 </template>
 
@@ -9,7 +9,7 @@ import Vue from 'vue';
 import Component from 'vue-class-component';
 
 @Component
-export default class HelloWorld extends Vue {
+export default class Topic extends Vue {
   msg: string = 'Hello!'
   mounted () {
   }
