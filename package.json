@@ -16,7 +16,8 @@
     "vue": "^2.5.2",
     "vue-class-component": "^6.1.0",
     "vue-property-decorator": "^6.0.0",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "better-scroll": "^1.4.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

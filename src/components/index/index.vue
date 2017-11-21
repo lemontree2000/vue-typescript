@@ -9,7 +9,12 @@
     </div>
     <div class="nav-bar">
       <ul>
-        <li v-for="(item,index) in navData" :key="item" v-text="item" :class="{'active': index == 0}">{{item}}</li>
+        <router-link 
+          tag="li" v-for="(item,index) in navData" 
+          :to="item.path" :key="item.name" 
+          :class="{'active': index == 0}">
+          {{item.name}}
+        </router-link>
       </ul>
     </div>
     <div>
@@ -25,7 +30,18 @@ import Component from 'vue-class-component';
 @Component
 export default class Index extends Vue {
   msg: string = 'Hello!'
-  navData: object = ['推荐', '居家', '餐厨', '配件', '服装', '电器', '洗护', '杂货', '饮食', '婴童', '志趣']
+  navData: object = [
+    {name:'推荐', path: '/index/recommend'}, 
+    {name:'居家', path: ''},
+    {name:'餐厨', path: ''},
+    {name:'配件', path: ''},
+    {name:'电器', path: ''},
+    {name:'洗护', path: ''},
+    {name:'杂货', path: ''},
+    {name:'饮食', path: ''},
+    {name:'婴童', path: ''},
+    {name:'志趣', path: ''}
+  ]
   mounted () {
   }
 
